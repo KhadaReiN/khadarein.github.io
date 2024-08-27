@@ -1,0 +1,177 @@
+*, *::after, *::before{
+    margin: 0px;
+    box-sizing: border-box
+    
+    
+}
+
+#a_main{
+    font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color: #202122;
+}
+
+
+/*Header top items*/
+
+#blue_line_top{
+    background-color: #096abc;
+    height: 5px;
+}
+
+div i{
+    font-size: 50px;
+}
+
+#nav_top_items>img {
+    height: 70px;
+    border-radius: 20%;
+}
+
+
+
+#nav_top, #nav_top_items{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 100px;
+
+}
+
+#nav_top > #nav_top_items{
+    align-self: center;
+    gap: 40px;
+}
+
+/*Nav botton items*/
+
+#nav_article{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#nav_article > i{
+    font-size: 20px;
+}
+
+#nav_bottom {
+    background-color: #014b87;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 30px 0px 30px 00px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav_bottom > #nav_article >p:hover{
+    text-decoration: underline;
+}
+
+#cards_space{
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+/*Cards*/
+.card{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    height: 420px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card > img{
+    width: 100px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card > #name_profesion > h4{
+    font-size: 30px;
+}
+
+.card >#name_profesion>p{
+    font-size: 24px;
+    color: #46505b;
+}
+
+.card>#button{
+    width: 150px;
+    height: 50px;
+    background-color: #0e70bd;
+    border-radius: 5%;
+    color: #ffffff;
+    font-size: 25px;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    
+
+}
+
+.card>#button:hover{
+    background-color: #0e71bdcc;
+}
+
+.card>#links{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+
+
+
+/*footer*/
+footer>#links{
+
+    background-color: #202122;
+    height: 200px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    
+}
+
+footer>#links>a>i{
+    color: #ffffff;
+}
+
+
+    
+
+
+
+
