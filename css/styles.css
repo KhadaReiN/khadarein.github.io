@@ -24,6 +24,10 @@
 div i{
     font-size: 25px;
 }
+#nav_top_items i:hover{
+    color: #096abc;
+    border-top: #014b87;
+}
 
 #nav_logo > img{
     height: 30px;
@@ -76,7 +80,7 @@ div i{
 
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -101,12 +105,11 @@ div i{
 #search{
     display: flex;
     flex-direction: row;
-    margin-left: 15px;
     gap: 6px;
     margin-left: 104px;
 }
 #search p{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     
 }
@@ -117,19 +120,21 @@ div i{
     margin-top: 20px;
 
     display: grid;
-    grid-template-columns: repeat(5, .1fr) ;
+    grid-template-columns: repeat(auto-fill, minmax(212px,.1fr)) ;
     gap: 20px;
     justify-content: center;
 }
 
 .card{
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     width: 212px;
     min-height: 212px;
+    border-radius: 3%;
     height: fit-content;
     margin: auto;
     padding: 10px;
     text-align: center;
+    transition: all 400ms ease;
 
 
     display: flex;
@@ -137,6 +142,11 @@ div i{
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+.card:hover{
+    transform: scale(1.01, 1.01);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .card > img{
@@ -163,14 +173,22 @@ div i{
     border-radius: 5%;
     color: #ffffff;
     font-size: 13px;
+    transition: all 400ms ease;
     
     display: flex;
     justify-content: center;
     padding-top: 3px;
+
 }
 
 .card>#button:hover{
     background-color: #0e71bdcc;
+}
+
+.card>#button>a{
+    text-decoration: none;
+    color: #ffffff;
+
 }
 
 .card>#links{
@@ -179,16 +197,20 @@ div i{
     gap: 13px;
 }
 
-.card:hover{
-    transform: scale(0.9, 0.9);
-    box-shadow: 0px 0px 0px 0px #000000;
+.card>#links>a{
+    color: #46505b;
+    transition: all 400ms ease;
+    
 }
+
+
+
 
 
 /*footer*/
 footer>#links{
 
-    background-color: #202122;
+    background-color: #d6d6d6;
     height: 100px;
     
 
@@ -200,6 +222,19 @@ footer>#links{
     
 }
 
-footer>#links>a>i{
-    color: #ffffff;
+#links>a>i{
+    color: #46505b;
+    transition: all 400ms ease;
 }
+
+
+/*icons hover effect*/
+
+#links>a>i:hover{
+    color: #46505bd5;
+}
+    
+
+
+
+
