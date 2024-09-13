@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common_header_styles.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div id="a_main">
+        <header>
+
+            <section>
+                <div id="blue_line_top"></div>
+            </section>
+
+            <section class="header">
+                <div id="nav_top">
+                    <div id="nav_logo">
+                        <img src="./img/BS_Campus Virtual_UM_LOGO_v1.jpg" alt="Mi página de inicio">
+                    </div>                   
+                </div>
+            </section>
+        </header>
+
+        <section id="content">
+                <form action="">
+                    <h1 class="title">Login</h1>
+                    <label for="email">
+                        <i class="fa-solid fa-user"></i>
+                        <input placeholder="email" type="text" id="email">
+                        <p id="emailAlert"></p>
+                        
+                    </label>
+                    
+                    <label for="password">
+                        <div id="passwordContainer">
+                            <i class="fa-solid fa-lock"></i>
+                            <input placeholder="password" type="password" id="password">
+                            <i id="fa-eye" class="fa-regular fa-eye"></i>         
+                        </div>
+                        <p id="passwordAlert"></p>
+                    </label>
+                    
+                    <a href="#" class="link">Forgot your password?</a>
+                    
+                    <button type="sumbit" id="submitButton">Login</button>
+                </form>
+        </section>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
