@@ -47,7 +47,7 @@ const getEmail = document.getElementById("email"),
         
         
         if (validarEmail() + validarContraseña() === 2) {
-            location.href = "index.html";
+            location.href = "main.html";
         }
     }
 
